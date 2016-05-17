@@ -27,7 +27,7 @@ module EventBus =
         let data = downcast (event.Data :> obj)
         { Id = event.Id; OccurredAt = event.OccurredAt; Data = data }
         
-    type Bus (?syncContext : SynchronizationContext) =
+    type Bus private (syncContext : SynchronizationContext option) =
         let stream = new Event<EventOf<obj>>()
 
         let reportEvent event =
@@ -48,7 +48,11 @@ module EventBus =
             }
             loop ()
         )
-
+        
+        new (synchronizationContext) = Bus(Some synchronizationContext)
+        
+        new () = Bus(None)
+        
         member x.Publish event =
             event 
             |> downcastEvent
