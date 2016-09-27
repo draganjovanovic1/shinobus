@@ -15,7 +15,7 @@ let appReferences  =
       ++ "/**/*.fsproj"
 
 let projects =
-    [("Mocosha.Shinobus", "src/Mocosha.Shinobus/Mocosha.Shinobus.fsproj")]
+    [("Shinobus", "src/Shinobus.fsproj")]
 
 // version info
 let version = "0.1"  // or retrieve from CI server

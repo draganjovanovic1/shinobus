@@ -7,11 +7,11 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a1f439ff-7be8-432d-b322-bf30e20d542b</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Mocosha.Shinobus</RootNamespace>
-    <AssemblyName>Mocosha.Shinobus</AssemblyName>
+    <RootNamespace>Shinobus</RootNamespace>
+    <AssemblyName>Shinobus</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>Mocosha.Shinobus</Name>
+    <Name>Shinobus</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\Mocosha.Shinobus.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Shinobus.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +30,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\Mocosha.Shinobus.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Shinobus.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
